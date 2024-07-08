@@ -1,0 +1,69 @@
+
+.adminform {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.adminform input[type="text"],
+.adminform textarea,
+.adminform select,
+.adminform input[type="file"] {
+    width: calc(100% - 30px);
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.adminform input[type="text"]:focus,
+.adminform textarea:focus,
+.adminform select:focus,
+.adminform input[type="file"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+.adminform .button {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.adminform .button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .adminform {
+        padding: 20px;
+    }
+
+    .adminform input[type="text"],
+    .adminform textarea,
+    .adminform select,
+    .adminform input[type="file"] {
+        width: calc(100% - 20px);
+        padding: 12px;
+    }
+
+    .adminform .button {
+        padding: 14px;
+        font-size: 16px;
+    }
+}
